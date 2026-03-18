@@ -1,4 +1,8 @@
 package com.aruuke.todoshttp.todo;
 
-public class TodoNotFoundException {
+public class TodoNotFoundException extends Throwable {
+
+    public TodoNotFoundException(String message) {
+        super(message);
+    }
 }
